@@ -1,0 +1,16 @@
+name: Add new Pull Requests to the Project
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  add_pr_to_project:
+    name: Add Pull Request to Project
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/add-to-project@v0.3.0
+        with:
+          project-url: "https://github.com/users/bak0al3x/projects/2"
+          github-token: ${{ secrets.GH_PAT_ADD_ISSUES_TO_PROJECT }}
