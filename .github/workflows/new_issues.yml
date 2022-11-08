@@ -4,10 +4,6 @@ on:
   issues:
     types: [opened]
 
-secrets:
-  GH_PAT_ADD_ISSUES_TO_PROJECT:
-    required: true
-
 jobs:
   add_issue_to_project:
     name: Add issue to project
